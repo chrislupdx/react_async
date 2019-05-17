@@ -1,15 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './Characters.css';
 import Character from './Character';
+import styles from './Characters.css';
 
 function Characters({ characters }) {
-  const characterList = characters.map((character, i) => {
+  const characterList = characters.map((character, i) => (
     <li key={i}>
       <Character character={character} />
-    </li>;
-  });
-
+    </li>
+  ));
+  
   return (
     <ul className={styles.Characters}>
       {characterList}

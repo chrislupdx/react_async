@@ -1,11 +1,12 @@
 import React, { PureComponent } from 'react';
 import { getCharacters } from '../../services/rickAndMortyApi';
 import Characters from '../../Components/Characters/Characters';
+// import Loading from '../../Components/Loading';
 
 export default class Allcharacters extends PureComponent {
     state = {
       characters: [],
-      loading: true
+      // loading: true
     }
 
     fetchCharacters = () => {
