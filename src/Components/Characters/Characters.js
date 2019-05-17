@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Characters.css';
-// import Character from './Character';
+import Character from './Character';
 
 function Characters({ characters }) {
   const characterList = characters.map((character, i) => {
