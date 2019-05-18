@@ -17,8 +17,8 @@ function Paging({ currentPage, totalPages, nextPage, children }) {
 Paging.propTypes = {
   currentPage: PropTypes.number.isRequired,
   totalPages: PropTypes.number.isRequired,
-  nextPage: PropTypes.number.isRequired,
-  children: PropTypes.number.isRequired,
+  nextPage: PropTypes.func.isRequired,
+  children: PropTypes.node
 };
 
 export default Paging;
